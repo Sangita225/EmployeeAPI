@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-      btnviewdetails=findViewById(R.id.btndetails);
+       btnviewdetails=findViewById(R.id.btndetails);
+       btnsearch=findViewById(R.id.btnsearch);
+       btnregister=findViewById(R.id.btnregister);
 
 
       btnviewdetails.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,21 @@ public class MainActivity extends AppCompatActivity {
           }
       });
 
+      btnsearch.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent intent=new Intent(MainActivity.this,SearchEMployee.class);
+              startActivity(intent);
+          }
+      });
+
+      btnregister.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent intent=new Intent(MainActivity.this,RegisterActivity.class);
+              startActivity(intent);
+          }
+      });
 
 
     }
