@@ -12,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SearchEMployee"></activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".EmployeeDetails" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".BottomNavigation"
+            android:label="@string/title_activity_bottom_navigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SearchEMployee" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".EmployeeDetails" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

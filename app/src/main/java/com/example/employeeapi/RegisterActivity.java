@@ -30,17 +30,17 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        etname=findViewById(R.id.etname);
-        etSalary=findViewById(R.id.etsalary);
-        etAge=findViewById(R.id.etage);
-        btnregister=findViewById(R.id.btnregister);
-
-        btnregister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Register();
-            }
-        });
+//        etname=findViewById(R.id.etname);
+//        etSalary=findViewById(R.id.etsalary);
+//        etAge=findViewById(R.id.etage);
+//        btnregister=findViewById(R.id.btnregister);
+//
+//        btnregister.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Register();
+//            }
+//        });
 
     }
 private void Register(){
@@ -58,22 +58,22 @@ private void Register(){
     EmployeeAPI employeeAPI=retrofit.create(EmployeeAPI.class);
     Call<Void>voidCall=employeeAPI.registerEmployee(employeeCUD);
 
-    voidCall.enqueue(new Callback<Void>() {
-        @Override
-        public void onResponse(Call<Void> call, Response<Void> response) {
-
-            Toast.makeText(RegisterActivity.this,"you have been registered ",Toast.LENGTH_SHORT).show();
-
-        }
-
-        @Override
-        public void onFailure(Call<Void> call, Throwable t) {
-
-
-            Toast.makeText(RegisterActivity.this,"Error"+t.getLocalizedMessage(),Toast.LENGTH_SHORT).show();
-
-        }
-    });
+//    voidCall.enqueue(new Callback<Void>() {
+//        @Override
+//        public void onResponse(Call<Void> call, Response<Void> response) {
+//
+//            Toast.makeText(RegisterActivity.this,"you have been registered ",Toast.LENGTH_SHORT).show();
+//
+//        }
+//
+//        @Override
+//        public void onFailure(Call<Void> call, Throwable t) {
+//
+//
+//            Toast.makeText(RegisterActivity.this,"Error"+t.getLocalizedMessage(),Toast.LENGTH_SHORT).show();
+//
+//        }
+   // });
 
 
 }

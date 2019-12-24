@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EmployeeAPI</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">View Employee Details</string>
+    <string name="title_dashboard">Register</string>
+    <string name="title_notifications">Search Employee </string>
+    <string name="title_edit">Edit Employee</string>
+
 </resources>

@@ -35,27 +35,27 @@ public class EmployeeDetails extends AppCompatActivity {
 
 
 
-        Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl(URL.base_url)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        //create handler for retrofit instance interface
-
-        EmployeeAPI employeeAPI=retrofit.create(EmployeeAPI.class);
-        Call<List<Employee>> listCall=employeeAPI.getALLEmployee();
+//        Retrofit retrofit=new Retrofit.Builder()
+//                .baseUrl(URL.base_url)
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//        //create handler for retrofit instance interface
+//
+//        EmployeeAPI employeeAPI=retrofit.create(EmployeeAPI.class);
+//        Call<List<Employee>> listCall=employeeAPI.getALLEmployee();
 
 //execute request asynchronously
-        listCall.enqueue(new Callback<List<Employee>>() {
-            @Override
+   //    listCall.enqueue(new Callback<List<Employee>>() {
+           // @Override
 
             //handle a successful response
-            public void onResponse(Call<List<Employee>> call, Response<List<Employee>> response) {
-                if(!response.isSuccessful()){
-                    Toast.makeText(EmployeeDetails.this,"Error" + response.code(),Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//            public void onResponse(Call<List<Employee>> call, Response<List<Employee>> response) {
+//                if(!response.isSuccessful()){
+//                    Toast.makeText(EmployeeDetails.this,"Error" + response.code(),Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
 
-                LoadDataList(response.body());
+              //  LoadDataList(response.body());
             //    List<Employee>employeeList=response.body();
 
 //                for(Employee employee:employeeList){
@@ -71,17 +71,17 @@ public class EmployeeDetails extends AppCompatActivity {
 //                }
 //
 
-            }
+          //  }
 
-            @Override
+           // @Override
 
             //handle exection on failure
-            public void onFailure(Call<List<Employee>> call, Throwable t) {
-
-                Log.d("Mero msg","onFailure:"+t.getLocalizedMessage());
-               // tvoutput.setText("Error"+t.getMessage());
-            }
-        });
+//            public void onFailure(Call<List<Employee>> call, Throwable t) {
+//
+//                Log.d("Mero msg","onFailure:"+t.getLocalizedMessage());
+//               // tvoutput.setText("Error"+t.getMessage());
+//            }
+     //   });
 
 
     }
