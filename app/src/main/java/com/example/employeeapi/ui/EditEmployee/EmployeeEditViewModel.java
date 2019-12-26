@@ -2,6 +2,6 @@ package com.example.employeeapi.ui.EditEmployee;
 
 import androidx.lifecycle.ViewModel;
 
-public class EditfragmentViewModel extends ViewModel {
+public class EmployeeEditViewModel extends ViewModel {
     // TODO: Implement the ViewModel
 }

@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_edit"
-        android:name="com.example.employeeapi.ui.EditEmployee.Editfragment"
+        android:name="com.example.employeeapi.ui.EditEmployee.EmployeeEdit"
         android:label="@string/title_edit"
-        tools:layout="@layout/editfragment_fragment" />
+        tools:layout="@layout/employee_edit_fragment" />
 </navigation>
